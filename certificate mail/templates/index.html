@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+ <div class="table-users">
+   <div class="header">Certificate Generator</div>
+      </div>
+  <div>
+<div >
+    <h2 style="text-align: center">International Conclave on Artificial Intelligence: Empowering Revolution in Technology</h2>
+
+    <div class="form content">
+        <form action="/" method="POST">
+            <h5 style="text-align: center; color:#cc3300;">{{result}}</h5>
+            <input type="text" name="content" id="content" Placeholder="Email">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+{% endblock %}
