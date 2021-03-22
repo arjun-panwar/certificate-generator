@@ -8,8 +8,8 @@ from email.message import EmailMessage
 df = pd.read_csv('list.csv')
 emaillst=df['email'].values.tolist()
 df.set_index("email", inplace=True)
-EMAIL_ADDRESS = "arjunpanwar28oct2001@gmail.com"
-EMAIL_PASSWORD = "badboybadal1995"
+EMAIL_ADDRESS = "gmail"
+EMAIL_PASSWORD = "password"
 
 for email in emaillst:
     try:
